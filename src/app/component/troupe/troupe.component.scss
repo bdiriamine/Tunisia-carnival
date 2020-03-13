@@ -1,0 +1,33 @@
+.new-background-color{
+    --background: url(https://www.dhresource.com/600x600/f2/albu/g7/M01/B1/A5/rBVaSVvFmaSAIEggAASPjoPXosw610.jpg) no-repeat top center/cover fixed, #fff;
+    position: relative;
+    height: 50%;
+    width: 100%;}
+    .overflow-me{
+      overflow: hidden;
+      text-overflow: ellipsis;
+     }
+  
+     @font-face {
+      font-family: Futuralight;
+      src: url(../../../assets/fonts/futuralightbt.ttf) format("opentype");
+    
+    }
+    #fontfm{
+      font-family:Futuralight ;
+      font-size: 19px;
+      font-weight: bold;
+      
+    }
+    #fontlg{
+      font-family:Futuralight ;
+      font-size: 15px;
+      font-weight: 300;
+     
+    }
+    #fontfmW{
+      font-family:Futuralight ;
+      font-size: 22px;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+    }

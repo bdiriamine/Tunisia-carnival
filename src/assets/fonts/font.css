@@ -1,0 +1,13 @@
+@font-face{
+    font-family: 'FuturaBT-Book';
+
+    src: url('FuturaBookfont.ttf') format('truetype'), 
+    url('futura-book-bt-webfont.woff2') format('woff2'),
+         url('futura-book-bt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'FuturaBT-Book';
+    src: url(/src/assets/fonts/Futura\ Book\ font.ttf);
+}

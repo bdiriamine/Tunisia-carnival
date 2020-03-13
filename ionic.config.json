@@ -1,0 +1,8 @@
+{
+  "name": "tunisiacarnival",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

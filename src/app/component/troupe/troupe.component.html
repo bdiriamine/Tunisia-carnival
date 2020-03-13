@@ -1,0 +1,138 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      {{myId}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="new-background-color">
+
+
+
+<ion-card *ngFor="let n of troupearabesque" style="border: 1px solid rgb(110, 38, 38)">
+  <ion-card-header>
+    <ion-card-title id="fontfm" style="color: #9ea171;"> {{n.titre}}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content id="fontlg" > 
+<ion-slides  style="margin-top: 2%;"> 
+  <ion-slide style="margin-left: 0.5%; margin-right: 40%;">
+   
+      <img style="background-color: #833ab4;border: 1px solid rgb(0, 0, 0);width: 90%;"   [src]="n.img1" >
+    
+  </ion-slide>
+  <ion-slide>
+   
+      <img  style="background-color: #833ab4;border: 1px solid rgb(10, 10, 10);width: 90%;"   [src]="n.img2"  >
+    
+  </ion-slide>
+  <ion-slide>
+   
+      <img style="background-color: #833ab4;border: 1px solid rgb(0, 0, 0);width: 90%;"   [src]="n.img3" >
+
+  </ion-slide>
+</ion-slides>  
+</ion-card-content>
+</ion-card>
+
+
+<ion-card *ngFor="let n of troupehanine" style="border: 1px solid rgb(202, 35, 35)">
+  <ion-card-header>
+    <ion-card-title id="fontfm" style="color: #9ea171;"> {{n.titre}}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content id="fontlg" > 
+<ion-slides  style="margin-top: 2%;"> 
+  <ion-slide style="margin-left: 0.5%; margin-right: 40%;">
+   
+      <img style="background-color: #833ab4;border: 1px solid rgb(0, 0, 0);width: 90%;"   [src]="n.img1" >
+    
+  </ion-slide>
+  <ion-slide>
+   
+      <img  style="background-color: #833ab4;border: 1px solid rgb(10, 10, 10);width: 90%;"   [src]="n.img2"  >
+    
+  </ion-slide>
+  <ion-slide>
+   
+      <img style="background-color: #833ab4;border: 1px solid rgb(0, 0, 0);width: 90%;"   [src]="n.img3" >
+
+  </ion-slide>
+</ion-slides>  
+</ion-card-content>
+</ion-card>
+
+<ion-card *ngFor="let n of troupemajorette" style="border: 1px solid rgb(36, 9, 9)">
+  <ion-card-header>
+    <ion-card-title id="fontfm" style="color: #9ea171;"> {{n.titre}}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content id="fontlg" > 
+<ion-slides  style="margin-top: 2%;"> 
+  <ion-slide style="margin-left: 0.5%; margin-right: 40%;">
+   
+      <img style="background-color: #833ab4;border: 1px solid rgb(0, 0, 0);width: 90%;"   [src]="n.img1" >
+    
+  </ion-slide>
+  
+</ion-slides>  
+</ion-card-content>
+</ion-card>
+
+<ion-card *ngFor="let n of troupemaIfriga" style="border: 1px solid rgb(36, 9, 9)">
+  <ion-card-header>
+    <ion-card-title id="fontfm" style="color: #9ea171;"> {{n.titre}}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content id="fontlg" > 
+    <img [src]="n.img" >
+    <ion-button (click)="openMyVideo(n.url)" color="danger" expand="block"   shape="round" >
+     Video
+    </ion-button>
+</ion-card-content>
+</ion-card>
+
+<ion-card *ngFor="let n of vds" style="border: 1px solid rgb(36, 9, 9)" >
+  <ion-card-header >
+    <ion-card-title id="fontfm" style="color: #9ea171;"> {{n.titre}}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content id="fontlg" > 
+    <video controls="controls" preload="metadata" autoplay="false" style="width: 310px;" webkit-playsinline="webkit-playsinline" class="videoPlayer">
+      <source [src]="n.url" type="video/mp4" />
+     </video>
+</ion-card-content>
+</ion-card>
+<ion-card style="background-color: rgb(199, 15, 15);">
+  <ion-card-header>
+    <ion-card-title id="fontfmW" >  Nos Sponsors : </ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content id="fontlg" >
+    <ion-slides style="margin-top: 2%;"> 
+  
+      <ion-slide style=" margin-right: 40%;">
+       
+          <img style="width: 350px;background-position: center center; background-size: contain; background-repeat: no-repeat; min-height: 288px;"   src="http://www.tunisiacarnival.com/wp-content/uploads/2019/03/logo-hote-atruim.jpg" >
+        
+      </ion-slide>
+      <ion-slide>
+       
+          <img  style="width: 350px;background-position: center center; background-size: contain; background-repeat: no-repeat; min-height: 288px;"  src="http://www.tunisiacarnival.com/wp-content/uploads/2020/02/unnamed.png"  >
+        
+      </ion-slide>
+      <ion-slide>
+       
+          <img style="border: 1px solid rgb(0, 0, 0);width: 350px;background-position: center center; background-size: contain; background-repeat: no-repeat; min-height: 156px;"  src="http://www.tunisiacarnival.com/wp-content/uploads/2020/02/darelolfhotel.png" >
+   
+      </ion-slide>
+    </ion-slides> 
+  
+  </ion-card-content>
+</ion-card>
+</ion-content>

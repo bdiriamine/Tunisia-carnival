@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Détail 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="new-background-color">
+
+  <ion-card style="background-color: rgb(199, 15, 15);">
+    <ion-card-header>
+      <ion-card-title id="fontfmW" >  Nos Sponsors : </ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content id="fontlg" >
+      <ion-slides style="margin-top: 2%;"> 
+    
+        <ion-slide style=" margin-right: 40%;">
+         
+            <img style="width: 350px;background-position: center center; background-size: contain; background-repeat: no-repeat; min-height: 288px;"   src="http://www.tunisiacarnival.com/wp-content/uploads/2019/03/logo-hote-atruim.jpg" >
+          
+        </ion-slide>
+        <ion-slide>
+         
+            <img  style="width: 350px;background-position: center center; background-size: contain; background-repeat: no-repeat; min-height: 288px;"  src="http://www.tunisiacarnival.com/wp-content/uploads/2020/02/unnamed.png"  >
+          
+        </ion-slide>
+        <ion-slide>
+         
+            <img style="border: 1px solid rgb(0, 0, 0);width: 350px;background-position: center center; background-size: contain; background-repeat: no-repeat; min-height: 156px;"  src="http://www.tunisiacarnival.com/wp-content/uploads/2020/02/darelolfhotel.png" >
+     
+        </ion-slide>
+      </ion-slides> 
+    
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf ="datauser">
+    <ion-item>
+      <ion-note id="fontdata" slot="start" >{{datauser.start_date  | date: 'MMM dd '}}- {{datauser.end_date |date: 'dd'}}  </ion-note>
+     
+      <ion-note id="fontdata" slot="end" >{{datauser.end_date |date: 'yyyy'}} </ion-note>
+    </ion-item>
+  
+    <ion-card-content>
+      
+      <p id="textcentreevents" >{{datauser.title}}</p> <br>
+      <p id="textcentreevent" >{{datauser.venue.city}}</p> 
+      <p>Affiche : </p> <br>
+      <ion-slides>
+        <ion-slide>
+          <img   src="http://www.tunisiacarnival.com/wp-content/uploads/event/{{datauser.id}}-affiche.jpg" alt=""> 
+        </ion-slide>
+      </ion-slides> 
+      <br>
+      
+      <p>Programme : </p> <br>
+     
+      <ion-slides>
+        <ion-slide>
+          <img   src="http://www.tunisiacarnival.com/wp-content/uploads/event/{{datauser.id}}-flayer.jpg" style="height: 600px;">
+        </ion-slide>
+      </ion-slides> 
+          </ion-card-content>
+  </ion-card>
+   
+
+</ion-content>  

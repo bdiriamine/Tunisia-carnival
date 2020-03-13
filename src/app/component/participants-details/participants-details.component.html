@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      {{participant.titre}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content class="new-background-color" >
+  <div style="text-align: center;margin-top: 10%;">
+    <img src={{participant.imgurl}} style="height: 220px; " >
+  </div>
+  
+  <div class="card-title" id="fontfm" style="text-align: center; background-color: white; height: 50px; padding-top: 2%;border: solid rgb(0, 0, 0) 1px;">{{participant.titre}}</div>
+  <div *ngIf="participant.videobol" style="text-align: center; ">
+    <ion-button (click)="openMyVideo (participant.youtubevideo )" color="danger" expand="full">  Ouvrir  Vidéo </ion-button>
+  </div>
+  <ion-card style="background-color: rgb(199, 15, 15);">
+    <ion-card-header>
+      <ion-card-title id="fontfmW" >  Nos Sponsors : </ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content id="fontlg" >
+      <ion-slides style="margin-top: 2%;"> 
+    
+        <ion-slide style=" margin-right: 40%;">
+         
+            <img style="width: 350px;background-position: center center; background-size: contain; background-repeat: no-repeat; min-height: 288px;"   src="http://www.tunisiacarnival.com/wp-content/uploads/2019/03/logo-hote-atruim.jpg" >
+          
+        </ion-slide>
+        <ion-slide>
+         
+            <img  style="width: 350px;background-position: center center; background-size: contain; background-repeat: no-repeat; min-height: 288px;"  src="http://www.tunisiacarnival.com/wp-content/uploads/2020/02/unnamed.png"  >
+          
+        </ion-slide>
+        <ion-slide>
+         
+            <img style="border: 1px solid rgb(0, 0, 0);width: 350px;background-position: center center; background-size: contain; background-repeat: no-repeat; min-height: 156px;"  src="http://www.tunisiacarnival.com/wp-content/uploads/2020/02/darelolfhotel.png" >
+     
+        </ion-slide>
+      </ion-slides> 
+    
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

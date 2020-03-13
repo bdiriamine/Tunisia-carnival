@@ -1,0 +1,64 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+ion-content ion-toolbar {
+  --background: translucent;
+}
+.new-background-color{
+  --background: url(../../assets/img/gg.jpg) no-repeat top center/cover fixed, #fff;
+  position: relative;
+  height: 50%;
+  width: 100%;}
+  .overflow-me{
+    overflow: hidden;
+    text-overflow: ellipsis;
+   }
+
+   @font-face {
+    font-family: Futuralight;
+    src: url(../../assets/fonts/futuralightbt.ttf) format("opentype");
+  
+  }
+  #fontfm{
+    font-family:Futuralight ;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(63, 116, 63);
+  }
+  #fontfmW{
+    font-family:Futuralight ;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  #fontlg{
+    font-family:Futuralight ;
+    font-size: 15px;
+    font-weight: 300;
+    
+  }

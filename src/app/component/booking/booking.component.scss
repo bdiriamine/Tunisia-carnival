@@ -1,0 +1,48 @@
+
+    .danger {
+        border-color: #f44336;
+        color: red
+      }
+      @font-face {
+        font-family: Futuralight;
+        src: url(../../../assets/fonts/futuralightbt.ttf) format("opentype");
+      
+      }
+      #fontfm{
+        font-family:Futuralight ;
+        font-size: 19px;
+        font-weight: bold;
+        color: #ff9500;
+      }
+      #fontlg{
+        font-family:Futuralight ;
+        font-size: 13px;
+        font-weight: 300;
+        color: #ffffff;
+      }
+      .myOverlay{
+        width: 100%;
+       
+        position: absolute;
+        z-index: 99;
+        bottom: 0px;
+        opacity: 0.5;
+        background: #000;
+        color: rgb(255, 255, 255);
+      
+      }
+      .new-background-color{
+        --background: url(../../../assets/img/gg.jpg) no-repeat top center/cover fixed, #fff;
+        position: relative;
+        height: 50%;
+        width: 100%;}
+
+    
+       
+          #fontfmW{
+            font-family:Futuralight ;
+            font-size: 22px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+          }
+     
